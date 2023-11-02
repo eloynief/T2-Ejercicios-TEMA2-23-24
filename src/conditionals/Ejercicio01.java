@@ -28,45 +28,55 @@ public class Ejercicio01 {
 		cent = num / 100;
 		mill = num / 1000;
 
-		
-		//
-		if (num >= 0 && num < 10) {
+		//comprobar si el numero es positivo
+		if(num>=0) {
+
+			//
+			if (num >= 0 && num < 10) {
+				
+				
+				System.out.print("El número introducido es capicúo");
+				
+				
+			} else if (num >= 10 && num < 100 && /*dec % 10 == uni*/ /*si el numero es multiplo de 11, es capicuo*/num%11==0) {
+				
+				
+				System.out.print("El número introducido es capicúo");
+				
+				
+			} else if (num >= 100 && num < 1000 && cent % 10 == uni) {
+				
+				
+				System.out.print("El número introducido es capicúo");
+				
+				
+			} else if (num >= 1000 && num < 10000 && mill % 10 == uni && cent % 10 == dec % 10) {
+				
+				
+				System.out.print("El número introducido es capicúo");
+				
+				
+			} else if (num < 0 || num >= 10000) {
+				
+				
+				System.out.print("El número introducido no es válido");
+				
 			
+			} 
+			//
+			else {
+				
+				
+				System.out.print("El número introducido no es capicúo");
+			}
 			
-			System.out.print("El número introducido es capicúo");
-			
-			
-		} else if (num >= 10 && num < 100 && /*dec % 10 == uni*/ /*si el numero es multiplo de 11, es capicuo*/num%11==0) {
-			
-			
-			System.out.print("El número introducido es capicúo");
-			
-			
-		} else if (num >= 100 && num < 1000 && cent % 10 == uni) {
-			
-			
-			System.out.print("El número introducido es capicúo");
-			
-			
-		} else if (num >= 1000 && num < 10000 && mill % 10 == uni && cent % 10 == dec % 10) {
-			
-			
-			System.out.print("El número introducido es capicúo");
-			
-			
-		} else if (num < 0 || num >= 10000) {
-			
-			
-			System.out.print("El número introducido no es válido");
-			
-		
-		} 
-		//
-		else {
-			
-			
-			System.out.print("El número introducido no es capicúo");
 		}
+		
+		//si el número es negativo, decimos que el número que se ha introducido no es válido
+		else {
+			System.out.println("El número introducido no es válido");
+		}
+		
 		
 		
 		
