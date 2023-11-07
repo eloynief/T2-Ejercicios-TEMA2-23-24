@@ -11,46 +11,85 @@ public class Ejercicio01 {
 		
 
 		// variables para guardar la hora, minuto, segundo y segundos para incrementar
-		int hora,min,sec,incrementar;
+		int hora=0,min=0,sec = 0,incrementar=0;
 		
 		
 		//try de horas
 		
-		// Le decimos al usuario que introduzca un número
-		System.out.print("Introduce las horas: ");
+		try {
 
+			// Le decimos al usuario que introduzca un número
+			System.out.print("Introduce las horas: ");
+
+			
+			// Comando para introducir la hora
+			hora = sc.nextInt();
+			
+		}
+		//captura el error del valor escrito
+		catch(Exception e){
+			System.out.println("El valor introducido es incorrecto");
+			System.out.println(e.getMessage());
+		}
 		
-		// Comando para introducir la hora
-		hora = sc.nextInt();
+		
 
 		
 		//try de minutos
 		
-		// Le decimos al usuario que introduzca un número
-		System.out.print("Introduce los minutos: ");
+		try {
 
+			// Le decimos al usuario que introduzca un número
+			System.out.print("Introduce los minutos: ");
+
+			
+			// Comando para introducir los min
+			min = sc.nextInt();
+			
+		}
+		//captura el error del valor escrito
+		catch(Exception e){
+			System.out.println("El valor introducido es incorrecto");
+			System.out.println(e.getMessage());
+		}
 		
-		// Comando para introducir los min
-		min = sc.nextInt();
 		
 		//try de segundos
-
-		// Le decimos al usuario que introduzca un número
-		System.out.print("Introduce los segundos: ");
-
 		
-		// Comando para introducir los sec
-		sec = sc.nextInt();
+		try {
+
+			// Le decimos al usuario que introduzca un número
+			System.out.print("Introduce los segundos: ");
+
+			
+			// Comando para introducir los sec
+			sec = sc.nextInt();
+			
+		}
+		//captura el error del valor escrito
+		catch(Exception e){
+			System.out.println("El valor introducido es incorrecto");
+			System.out.println(e.getMessage());
+		}
 		
 
 		//try de la cantidad de segundos a incrementar
 		
-		// Le decimos al usuario que introduzca la cantidad de segundos que se van a incrementar
-		System.out.print("Introduce el número de segundos a incrementar: ");
+		try {
 
-		
-		// Comando para introducir el incremento de las numros
-		incrementar = sc.nextInt();
+			// Le decimos al usuario que introduzca la cantidad de segundos que se van a incrementar
+			System.out.print("Introduce el número de segundos a incrementar: ");
+
+			
+			// Comando para introducir el incremento de las numros
+			incrementar = sc.nextInt();
+			
+		}
+		//captura el error del valor escrito
+		catch(Exception e){
+			System.out.println("El valor introducido es incorrecto");
+			System.out.println(e.getMessage());
+		}
 		
 		
 		
