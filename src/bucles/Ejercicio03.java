@@ -1,5 +1,6 @@
 package bucles;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio03 {
@@ -21,15 +22,24 @@ public class Ejercicio03 {
 			
 		}
 		//si el valor introducido no es correcto, hace las instrucciones del catch
-		catch(Exception e) {
+		catch(InputMismatchException e) {
 			System.err.println("El valor introducido no es correcto");
 		}
 		
+		//for para recorrer los valores
 		for(int i = 1;i<=n;i++) {
 			
 			
-			for (int j;)
-			
+			//imprime los espacios
+			for (int j= 1;j<=n-i;j++) {
+				
+				System.out.print(" ");
+			}
+			//imprime los *
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
 		}
 
 		//cierre de scanner

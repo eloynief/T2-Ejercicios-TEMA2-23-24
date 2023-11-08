@@ -1,5 +1,6 @@
 package bucles;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio01 {
@@ -27,7 +28,7 @@ public class Ejercicio01 {
 			
 		}
 		//captura el error del valor escrito
-		catch(Exception e){
+		catch(InputMismatchException e){
 			System.out.println("El valor introducido es incorrecto");
 			System.out.println(e.getMessage());
 		}
@@ -48,7 +49,7 @@ public class Ejercicio01 {
 			
 		}
 		//captura el error del valor escrito
-		catch(Exception e){
+		catch(InputMismatchException e){
 			System.out.println("El valor introducido es incorrecto");
 			System.out.println(e.getMessage());
 		}
@@ -67,7 +68,7 @@ public class Ejercicio01 {
 			
 		}
 		//captura el error del valor escrito
-		catch(Exception e){
+		catch(InputMismatchException e){
 			System.out.println("El valor introducido es incorrecto");
 			System.out.println(e.getMessage());
 		}
@@ -86,7 +87,7 @@ public class Ejercicio01 {
 			
 		}
 		//captura el error del valor escrito
-		catch(Exception e){
+		catch(InputMismatchException e){
 			System.out.println("El valor introducido es incorrecto");
 			System.out.println(e.getMessage());
 		}
